@@ -11,6 +11,9 @@ header {
     padding: 20px;
     width: 100%;
     box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 body {
@@ -20,4 +23,9 @@ body {
 h1 {
     color: #ffffff;
     font-weight: bold;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
 }
