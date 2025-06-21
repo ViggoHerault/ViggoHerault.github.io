@@ -7,9 +7,9 @@
 }
 
 header {
+    width: 100%;
     background-color: #000000;
     padding: 20px;
-    width: 100%;
     box-sizing: border-box;
     align-items: center;
     display: flex;
@@ -45,20 +45,25 @@ ul {
 }
 
 .presentation {
-    height: 100vh; 
+    width: 100%;
+    aspect-ratio: 2 / 1;
     background-image: url("Pictures/background.png");
-    background-size: cover; 
-    background-position: center;
+    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     text-align: center;
     position: relative;
 }
 
-.presentation h1 {
-    font-size: 70px;
-    padding: 20px 40px;
-    border-radius: 10px;
+.content {
+    font-size: 40px;
+}
+
+.projects-presentation {
+    height: 100px;
+    width: 100%;
+    background-color: #000000;
 }
