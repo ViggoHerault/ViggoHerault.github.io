@@ -29,3 +29,12 @@ a {
     color: #ffffff;
     text-decoration: none;
 }
+
+.menu {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.menu li {
+    padding: 15px;
+}
