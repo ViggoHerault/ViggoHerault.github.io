@@ -291,3 +291,54 @@ project-title {
     padding: 40px;
     color: #ffffff;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-form-wrapper {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  background-color: #222;
+  color: white;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  resize: vertical;
+}
+
+form textarea {
+  height: 150px;
+}
+
+form label {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+form .hidden {
+  display: none;
+}
+
+.contact-background{
+    background-color: #ff0000;
+}

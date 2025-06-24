@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Viggo Hérault</title>
+    <title>Viggo HÃ©rault</title>
     <link rel="icon" type="image/png" href="Pictures/star.png">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -43,6 +43,27 @@
 
     <div class="contact-me">
         <p>Feel free to contact me !</p>
+    </div>
+
+    <div class="contact-background">
+        <p>CONTACT FORM :</p>
+
+        <div class="contact-form-wrapper">
+            <form name="contact" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact" />
+
+                <label>Your Name:</label>
+                <input type="text" name="name" required />
+
+                <label>Your Email:</label>
+                <input type="email" name="email" required />
+
+                <label>Message:</label>
+                <textarea name="message" required></textarea>
+
+                <button type="submit" class="project-button">Send</button>
+            </form>
+        </div>
     </div>
 
     <div class="footer">
