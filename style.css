@@ -119,21 +119,21 @@ ul {
     font-size: 20px;
     background-color: #383838;
     width: 480px;
-    height: 480px;
+    height: 500px;
     color: #ffffff;
     border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
+    padding: 10px;
+    margin: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: left;
 }
 .project-image {
+    display: block; 
+    margin: 0 auto 20px;
     width: 80%;
     border-radius: 8px;
     object-fit: cover;
+    margin-bottom: 20px;
 }
 project-title {
     margin-top: 20px;
@@ -149,17 +149,17 @@ project-title {
 .project-button {
     margin-top: 20px;
     padding: 10px 20px;
-    font-size: 10px;
+    font-size: 20px;
     background-color: rgba(0, 0, 0, 0.3);
     width: 160px;
-    height: 80px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #ffffff;
     border: 1px solid white;
 }
-project-button:hover {
+.project-button:hover {
     background-color: rgba(255, 255, 255, 0.2);
     color: #ffffff;
 }
