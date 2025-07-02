@@ -292,6 +292,20 @@ project-title {
     color: #ffffff;
 }
 
+.back-project-page {
+    color: #ffffff;
+    width: 100%;
+    aspect-ratio: 4 / 1;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
 
 
 
