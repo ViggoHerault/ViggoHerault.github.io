@@ -306,7 +306,9 @@ project-title {
     position: relative;
 }
 
-
+.project-title {
+    height: 200px;
+}
 
 
 
