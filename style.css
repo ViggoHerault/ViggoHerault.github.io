@@ -510,12 +510,17 @@ form .hidden {
     height: 200px;
     image-rendering: pixelated;
 }
-.project-character-sprite-dreadwake {
-    height: 600px;
+.project-poster-sprite-dreadwake {
+    height: 550px;
+    margin: 10px;
 }
 .project-title-text-wrapper {
     display: flex;
     flex-direction: column;
+}
+.dreadwake-pitch {
+    max-width: 600px;
+    line-height: 1;
 }
 
 .project-screenshot {
