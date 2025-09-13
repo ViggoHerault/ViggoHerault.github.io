@@ -43,6 +43,27 @@
 
     <div class="contact-me">
         <p>Feel free to contact me !</p>
+        <div class="contact-background">
+            <div class="contact-form-wrapper">
+                <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contact-form">
+                    <input type="hidden" name="form-name" value="contact" />
+
+                    <label>Your Name:</label>
+                    <input type="text" name="name" required />
+
+                    <label>Your Email:</label>
+                    <input type="email" name="email" required />
+
+                    <label for="subject">Subject:</label>
+                    <input id="subject" type="text" name="subject" required />
+
+                    <label>Message:</label>
+                    <textarea name="message" required></textarea>
+
+                    <button type="submit" class="project-button">Send</button>
+                </form>
+            </div>
+        </div>
     </div>
 
     <div class="footer">
@@ -70,6 +91,74 @@
             </ul>
         </div>
     </div>
+
+
+    <script>
+        (function () {
+            const form = document.getElementById('contact-form');
+            const modal = document.getElementById('contact-modal');
+            const closeBtn = modal.querySelector('.modal-close');
+
+            function encodeFormData(formElement) {
+                const fd = new FormData(formElement);
+                return new URLSearchParams(fd).toString();
+            }
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                const submitBtn = form.querySelector('button[type="submit"]');
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Sending...';
+
+                const body = encodeFormData(form);
+
+                fetch("/", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                    body: body
+                })
+                    .then(response => {
+                        if (response.ok) {
+                            form.reset();
+                            modal.classList.add('show');
+                            modal.setAttribute('aria-hidden', 'false');
+                        } else {
+                            return response.text().then(t => { throw new Error(t || 'Form submit error'); });
+                        }
+                    })
+                    .catch(err => {
+                        console.error('Form submit error:', err);
+                        alert('Error sending message — please try again later.');
+                    })
+                    .finally(() => {
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = 'Send';
+                    });
+            });
+
+            closeBtn.addEventListener('click', () => {
+                modal.classList.remove('show');
+                modal.setAttribute('aria-hidden', 'true');
+            });
+
+            modal.addEventListener('click', (ev) => {
+                if (ev.target === modal) {
+                    modal.classList.remove('show');
+                    modal.setAttribute('aria-hidden', 'true');
+                }
+            });
+
+            document.addEventListener('keydown', (ev) => {
+                if (ev.key === 'Escape' && modal.classList.contains('show')) {
+                    modal.classList.remove('show');
+                    modal.setAttribute('aria-hidden', 'true');
+                }
+            });
+        })();
+    </script>
+
+
 </body>
 
 </html>

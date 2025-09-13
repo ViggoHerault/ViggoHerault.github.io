@@ -281,7 +281,7 @@ project-title {
 
 .contact-me {
     font-size: 30px;
-    height: 900px;
+    height: 750px;
     width: 100%;
     background-color: #000000;
     display: flex;
@@ -375,6 +375,7 @@ form input, form textarea {
 
 form textarea {
   height: 150px;
+  resize:vertical;
 }
 
 form label {
@@ -385,9 +386,12 @@ form label {
 form .hidden {
   display: none;
 }
+.hidden {
+    display: none;
+}
 
 .contact-background{
-    background-color: #ff0000;
+    width: 900px;
 }
 
 
@@ -657,4 +661,47 @@ form .hidden {
 }
 .creator-link img:hover {
     transform: scale(1.2); 
+}
+
+
+
+
+
+.modal {
+    position: fixed;
+    inset: 0; 
+    display: none; 
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.6);
+    z-index: 9999;
+}
+
+.modal.show {
+    display: flex;
+
+}
+
+.modal-content {
+    background: #111;
+    color: #fff;
+    padding: 22px;
+    border-radius: 10px;
+    max-width: 480px;
+    width: calc(100% - 40px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    text-align: center;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
 }
