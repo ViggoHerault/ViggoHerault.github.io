@@ -514,6 +514,22 @@ form .hidden {
     color: #09a324;
     margin-left: 60px;
 }
+.project-concept-bobar {
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+}
+.project-concept-bobar h1 {
+    margin-bottom: 30px;
+    margin-left: 60px;
+}
+    .project-concept-bobar p {
+        margin-bottom: 60px;
+        font-size: 20px;
+        color: #29a778;
+        margin-left: 60px;
+    }
 
 
 .project-title-wrapper {
