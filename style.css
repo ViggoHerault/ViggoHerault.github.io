@@ -235,7 +235,7 @@ project-title {
     font-size: 20px;
     background-color: #383838;
     width: 520px;
-    height: 580px;
+    height: 610px;
     color: #ffffff;
     border-radius: 10px;
     padding: 10px;
@@ -256,7 +256,7 @@ project-title {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 .skill-logo {
     height: 60px;
@@ -598,7 +598,7 @@ form .hidden {
 .project-title-wrapper-dreadwake {
     display: flex;
     align-items: flex-start;
-    gap: 20px;
+    gap: 180px;
 }
 .project-title-wrapper-NoTanks {
     padding: 25px;
@@ -626,6 +626,7 @@ form .hidden {
 .project-poster-sprite-dreadwake {
     height: 550px;
     margin: 10px;
+    margin-top: 40px;
 }
 .project-title-text-wrapper {
     display: flex;
