@@ -464,6 +464,31 @@ form .hidden {
 .project-core > div:hover {
     transform: translateY(-5px);
 }
+.project-core-FireVFXshowcase {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #000000;
+    justify-content: center;
+    height: 3500px;
+
+
+    display: grid;
+    grid-template-columns: 300px 1fr 300px;
+    align-items: start;
+}
+.project-core-FireVFXshowcase > div {
+    flex: 1; 
+    background-color: #383838;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    color: #ffffff;
+}
+.project-core-FireVFXshowcase > div:hover {
+    transform: translateY(-5px);
+}
 
 
 .project-concept {
@@ -524,12 +549,44 @@ form .hidden {
     margin-bottom: 30px;
     margin-left: 60px;
 }
-    .project-concept-bobar p {
-        margin-bottom: 60px;
-        font-size: 20px;
-        color: #29a778;
-        margin-left: 60px;
-    }
+.project-concept-bobar p {
+    margin-bottom: 60px;
+    font-size: 20px;
+    color: #29a778;
+    margin-left: 60px;
+}
+.project-concept-FireVFXshowcase {
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+}
+.project-concept-FireVFXshowcase h1 {
+    margin-bottom: 30px;
+    margin-left: 60px;
+}
+.project-concept-FireVFXshowcase p {
+    margin-bottom: 60px;
+    font-size: 20px;
+    color: #ff9c00;
+    margin-left: 60px;
+}
+.project-concept-FreezeZoneVFX {
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+}
+.project-concept-FreezeZoneVFX h1 {
+    margin-bottom: 30px;
+    margin-left: 60px;
+}
+.project-concept-FreezeZoneVFX p {
+    margin-bottom: 60px;
+    font-size: 20px;
+    color: #00cae6;
+    margin-left: 60px;
+}
 
 
 .project-title-wrapper {
@@ -587,6 +644,10 @@ form .hidden {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 100px;
+}
+.videos{
+    display: grid;
+    margin-bottom: 80px;
 }
 .video {
     margin-left: 80px;
