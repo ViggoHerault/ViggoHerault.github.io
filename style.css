@@ -457,6 +457,19 @@ form {
     grid-template-columns: clamp(200px, 20vw, 300px) 1fr clamp(200px, 20vw, 300px);
     align-items: start;
 }
+.project-core .project-creator {
+    background-color: #4a1e1e;
+}
+.project-core .table-of-content {
+    background-color: #4a1e1e;
+}
+.project-core-FireVFXshowcase .project-creator {
+    background-color: #4a1e1e;
+}
+.project-core-FireVFXshowcase .table-of-content {
+    background-color: #4a1e1e;
+}
+
 
     .project-core > div {
         flex: 1;
