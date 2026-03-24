@@ -817,6 +817,21 @@ form {
     left: 0;
     transform: scaleX(-1);
 }
+.flower-project-midle-right {
+    bottom: 0;
+    right: 0;
+    transform: scaleX(-1);
+}
+.flower-project-bottom-right {
+    bottom: -35%;
+    right: 0;
+    transform: scaleX(-1);
+}
+.flower-project-bottom-left {
+    bottom: -60%;
+    left: 0;
+    transform: scaleX(-1);
+}
 
 .flower-center {
     bottom: 50%;
