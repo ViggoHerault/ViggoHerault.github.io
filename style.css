@@ -827,7 +827,7 @@ form {
     right: 0;
     transform: scaleX(-1);
 }
-.flower-project-bottom-left {
+.flower-project-bottom-maxleft {
     bottom: -60%;
     left: 0;
     transform: scaleX(-1);
