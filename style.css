@@ -541,6 +541,7 @@ form {
 .project-concept-dreadwake,
 .project-concept-NoTanks,
 .project-concept-bobar,
+.project-concept-PoisonVFX,
 .project-concept-FireVFXshowcase,
 .project-concept-FreezeZoneVFX {
     padding: 1.25rem;
@@ -551,7 +552,7 @@ form {
 
     .project-concept h1, .project-concept-dreadwake h1,
     .project-concept-NoTanks h1, .project-concept-bobar h1,
-    .project-concept-FireVFXshowcase h1, .project-concept-FreezeZoneVFX h1 {
+    .project-concept-FireVFXshowcase h1, .project-concept-FreezeZoneVFX h1, .project-concept-PoisonVFX h1 {
         margin-bottom: 1.875rem;
         margin-left: clamp(1rem, 4vw, 3.75rem);
     }
@@ -588,6 +589,13 @@ form {
         margin-bottom: 3.75rem;
         font-size: clamp(1rem, 1.4vw, 1.25rem);
         color: #ff9c00;
+        margin-left: clamp(1rem, 4vw, 3.75rem);
+    }
+
+    .project-concept-PoisonVFX p {
+        margin-bottom: 3.75rem;
+        font-size: clamp(1rem, 1.4vw, 1.25rem);
+        color: #1bc76e;
         margin-left: clamp(1rem, 4vw, 3.75rem);
     }
 
